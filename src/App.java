@@ -41,7 +41,7 @@ public class App {
     static int codigo1(int[] vetor) {
         int resposta = 0;
         for (int i = 0; i < vetor.length; i += 2) {
-            resposta += vetor[i]%2;
+            resposta += vetor[i] % 2;
         }
         return resposta;
     }
@@ -57,7 +57,6 @@ public class App {
             for (int i = 0; i <= k; i++) {
                 contador++;
             }
-
         }
         return contador;
     }
@@ -96,13 +95,12 @@ public class App {
      * @param tamanho Tamanho do vetor a ser criado.
      * @return Vetor com dados aleatórios, com valores entre 1 e (tamanho/2), desordenado.
      */
-    static int[] gerarVetor(int tamanho){
+    static int[] gerarVetor(int tamanho) {
         int[] vetor = new int[tamanho];
         for (int i = 0; i < tamanho; i++) {
             vetor[i] = aleatorio.nextInt(1, tamanho/2);
         }
-        return vetor;
-        
+        return vetor;      
     }
     
     public static void main(String[] args) {
